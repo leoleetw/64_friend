@@ -1,0 +1,457 @@
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Toggle Styles */
+:focus{outline-style: none;}
+.btn{border: none;}
+a{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul{list-style: none;}
+
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #fff;
+    -webkit-box-shadow:-8px -8px 8px #D6D6D6 inset;
+}
+.sidebar-nav {
+    width: 250px;
+    list-style:none;
+}
+input[type="text"]{
+    margin-left: auto;
+    margin-right: auto;
+}
+@media(min-width:768px) {
+
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 50px; /* 0 */
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+/*------*/
+.header_inside{
+    width: 100%;
+    height: 85px;
+    padding-left: 40%;
+}
+footer{
+    width: 100%;
+    height: 80px;
+    background-color:#415A7C;
+    font-size: 12px;
+    color: #D1D2D3;
+    line-height: 16px;
+    letter-spacing: 1px;
+    clear: both;
+}
+    #foot_text{float: left;padding-top: 22px;}
+
+
+/***********************index page**********************************/
+section{width:1000px;height:auto;margin:0px auto 0px auto;}
+
+.header {
+	background:#ECE9C4;
+	height: 300px;
+	width: 100%;
+}
+    #header_logo{
+    	background: url('../images/logo.png');
+    	width: 311px;
+    	height: 61px;
+    	margin: 18px 0 0 0px;
+    	float: left;
+    }
+    .index_search{
+        background-color: #60B8A9;
+        width: 560px;
+        height: 54px;
+        border-radius:27px;
+        float: right;
+        margin-top:18px;
+        color:#fff;
+        font-size: 16px;
+        padding:12px 0px 0px 50px;
+    }
+    .drop_down{
+        background-color: #60B8A9;
+        -webkit-box-shadow:0px 0px 8px 2px #36756B inset;
+        border-style: none;
+        height: 30px;
+        border-radius: 5px;
+        min-width: 60px;
+        padding-left: 10px;
+    }
+    #search_btn{background-color: #000;border-radius: 5px;width: 80px;}
+
+#memberG {
+	background-color: #E06E72;
+	height: 530px;
+	width: 100%;
+	padding-top:85px;
+}
+.photo_wrapper {
+	height: 358px;
+	width: 764px;
+	float:left;
+}
+.photo01{
+	background:#999;
+	width:110px;
+	height:110px;
+	display:inline-block;
+	margin:0px 14px 14px 0px;
+}
+.photo01 img{width: 110px;height: 110px;}
+.hot{
+	width:236px;
+	height:358px;
+    float: right;
+	background:#fff;
+	padding:13px 0px 0px 13px;
+}
+.hotPhoto{
+	width:210px;
+	height:220px;
+	background:#999;
+}
+
+#memberB {
+	background-color: #60B8A9;
+	height: 530px;
+	width: 100%;
+	padding-top:85px;
+}
+
+/***********************search page**********************************/
+.searchTOP_bg{
+    background-color: #60B8A9;
+    width: 100%;
+    height: 250px;
+    color:#fff;
+    font-size: 16px;
+}
+.search_profileWrapper{
+    width: 200px;
+    height: 300px;
+    border:1px solid #999;
+    border-radius: 20px;
+    display: inline-block;
+}
+/***********************user(member) data page**********************************/
+.font_stronger{font-size: 24px;font-weight: 600;}
+.font_strong{font-size: 16px;}
+.font_small{font-size: 12px;}
+
+#main{height: 100%}
+
+.user_leftBox{
+    width: 70%;
+    float: left;
+    padding: 2%;
+}
+.user_rightBox{
+    width: 29%;
+    height: 100vh;
+    float: left;
+    border-left:1px solid #999;
+    padding: 1%;
+}
+/*----------個人資料----------*/
+.user_account{
+    width: 66%;height: 580px;
+    border:1px solid #999;
+    border-radius: 20px;
+    float: left;
+    padding: 20px;
+}
+    .inner_border{
+        display: inline-block;
+        border-bottom:1px solid #999;
+        padding:2%;
+    }
+    .personal{
+        width: 38%;height:430px;
+        border-right:1px solid #999;
+    }
+    .personal_info{
+        width: 60%;height:430px;
+        vertical-align: top;
+        margin-left: -4px;
+    }
+    .intro{
+        padding-top: 12px;
+    }
+/*----------徵友資料----------*/
+.user_match{
+    width: 32%;height: 580px;
+    border:1px solid #999;
+    border-radius: 20px;
+    float: right;
+    padding: 20px;
+}
+    .match_info{
+        width: 100%;
+        height: 410px;
+    }
+/*----------我的禮物----------*/
+.user_gift{
+    border:1px solid #999;
+    border-radius: 20px;
+    padding: 20px;
+}
+.member_gift{
+    border:1px solid #999;
+    border-radius: 20px;
+    float: right;
+    width: 48%;
+    padding: 20px;
+    margin-top: 1%;
+}
+    .gift_number{
+        width: 72%;height:250px;
+        border-right:1px solid #999;
+    }
+    .gift_number td{
+        width: 100px;
+        height: 60px;
+        vertical-align: baseline;
+        text-align: center;
+    }
+    .gift_number img{width: 60px;height: 60px;}
+    .gift_point{
+        width: 26%;height:250px;
+        vertical-align: top;
+        margin-left: -4px;
+    }
+    .gift_point section{height: 30px;}
+
+/*----------我的相簿----------*/
+.user_album{
+    border:1px solid #999;
+    border-radius: 20px;
+    margin-top: 2%;
+    padding: 20px;
+}
+.member_album{
+    border:1px solid #999;
+    border-radius: 20px;
+    float: left;
+    width: 51%;
+    padding: 20px;
+    margin-top: 1%;
+}
+    .albumImgContainer{
+        min-height:150px;width: 152px;
+        border: 1px solid #999;
+        border-radius:6px;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 4px;
+        padding: 1%;
+    }
+    .album_imgSize{height: 130px;width: 130px;overflow: hidden;}
+    .album_imgSize img{height: auto;width: 100%;}
+
+/*----------我的收藏----------*/
+.user_favorite{
+    border:1px solid #999;
+    border-radius: 20px;
+    padding: 20px;
+}
+    .user_favorite::after{content: "";clear: both;display: block;}
+    .favorite_imgContainer{padding:1%;float:left;}
+    .favorite_imgContainer img{width: 80px;height: 80px;border-radius: 50em;}
+
+.user_shop{
+    border:1px solid #999;
+    border-radius: 20px;
+    margin-top: 2%;
+    padding: 20px;
+}
+/*--mood wall--*/
+/*----------發佈用----------*/
+.release_Wrapper{
+    padding: 4%;
+    height: auto;
+}
+.release_Wrapper::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.release{
+    width: 100%;
+    min-height: 70px;
+    border-bottom: 1px solid #999;
+}
+.small_photo{
+    float: left;
+    width:50px;height:50px;
+    border-radius:50em;
+}
+.release_Text{
+    padding:10px 0 0 0px;
+    float: left;
+}
+.wall_post_imgContainer{
+    position: relative;
+    display:none;
+    clear: both;
+}
+.wall_post_img{max-height:380px;max-width: 410px;}
+.release_removeBtn{position:absolute;top:10px;right:10px;}
+.wall_keyin{border:0;box-shadow: none;}
+.wall_keyin:focus{box-shadow: none;}
+.add{float: right;margin: 10px 5px 0 0;}
+
+
+/*----------顯示用----------*/
+.show_Wrapper{
+    height: 100vh;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    background-color: #EEEFEF;
+    padding:4%;
+}
+    .show_Wrapper::-webkit-scrollbar {width: 10px;}
+    .show_Wrapper::-webkit-scrollbar-track {background-color:##EEEFEF;}
+    .show_Wrapper::-webkit-scrollbar-thumb {background-color: #000;margin-top: 20px;}
+    .show_Wrapper::-webkit-scrollbar-button {visibility: hidden;}
+    .show_Wrapper::-webkit-scrollbar-corner {background-color: black;}
+
+.Show{padding: 10% 4% 10% 4%;border:1px solid #C9C9CA;border-radius: 20px;margin-bottom: 2%;
+        background-color: #fff;}
+.nameDate{float: left;width: 76%;padding-left: 6px;}
+.nameDate::after{content: "";display: block;clear: both;}
+.show_edit{float: right;}
+.edit_menu{position:absolute;right:0; left:auto;min-width: 80px;cursor: pointer;}
+.show_content{clear: both;width: 100%;height: auto;padding-bottom: 10px;padding-top: 10px;
+                border-bottom:1px solid #E2E2E2;}
+.show_content img{height: 100%;max-width: }
+
+/***********************user edit page**********************************/
+.edit_innerStyle{
+    border:1px solid #999;
+    border-radius: 20px;
+    padding: 20px;
+}
+.edit_personal{width: 58%;float: left;}
+.edit_innerStyle table tr td:nth-child(1){text-align:right;}
+.edit_innerStyle td{padding: 1%;}
+.edit_match{
+    width: 40%;
+    float: right;
+    border:1px solid #999;
+    border-radius: 20px;
+    padding: 20px;
+}
+.edit_item{width: 20%;}
+.edit_personal input[type="text"]{width: 55%;}
+.edit_personal textarea{width: 100%;height: 90px;}
+.edit_match textarea{width: 100%;height: 90px;}
+
+/***********************favorite page**********************************/
+.favorite_wrapper{display: inline-block;padding: 2%;}
+.favorite_Container{position: relative;text-align: center;}
+.favorite_remove{position: absolute;top: 0;right: 0;
+                border-radius: 50em;cursor: pointer;border:1px solid #999;}
+.favorite_imgSize{width: 100px;height:100px;border-radius: 50em;cursor: pointer;}
+
+/***********************shop page**********************************/
+.shop_leftNav{
+    width: 16%;height: 300px;
+    display: inline-block;
+    border:1px solid #999;
+    border-radius: 20px;
+    padding: 2%;
+}
+.shop_rightBox{
+    width: 75%;
+    display: inline-block;
+    vertical-align: top;
+}
+.shop_wrapper{border:1px solid #999;border-radius: 20px;padding: 2%;
+}
+    .shop_itemContainer{
+        width: 15%;
+        border:1px solid #999;
+        text-align: center;
+        padding: 1%;
+        display: inline-block;
+        vertical-align: top;
+        margin: 4px;
+    }
+    .shop_itemContainer img{width: 90px;height:90px;}
+.shop_detail{border:1px solid #999;border-radius: 20px;padding: 2%;}
+
+/***********************user(member) photo page**********************************/
+.photo_ImgContainer{
+    width: 140px;
+    height:140px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+.photo_shadow{
+    width:inherit;
+    height:inherit;
+    position: absolute;
+    top: 0;left:0;
+    box-shadow: inset 0 -10px 20px 10px rgba(0,0,0,0.5) ;
+    opacity: 0;
+}
+    .photoImg{width: 100%;height:auto;}
+    .photo_jumi{position: absolute;left:5px;bottom: 5px;color:#fff;}
+    .photo_remove{margin: 5px 0 0 110px;}
+.photo_add{
+    width: 140px;height:140px;
+    border:1px solid #999;
+    border-radius: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+.add_btn{
+    width: 30%;
+    height:30%;
+    margin: 35%;
+    position: relative;
+}
+.add_btn::after{
+    position: absolute;
+    top:-18px;
+    left:2px;
+    content:"+";
+    font-size: 54px;
+    color:#999;
+    display: block;
+}
